@@ -23,4 +23,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-verzija }}
       - run: npm install # Namesti knjižnice.
+      - name: Start Server
+        run: |
+            python backend.py &
+            sleep 5 # wait for the server to start
       - run: npm test # Poženi teste.
