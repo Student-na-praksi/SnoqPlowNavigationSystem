@@ -22,14 +22,14 @@ jobs:
               uses: actions/setup-python@v2
               with:
                 python-version: '3.10.8' # replace with your Python version
-            # - name: Install dependencies
-            #   run: |
-                # python -m pip install --upgrade pip
-                # pip install -r requirements.txt # replace with your requirements file if you have one
             - name: Install dependencies
               run: |
-                  python -m pip install --upgrade pip
-                  pip install flask # install Flask directly
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt # replace with your requirements file if you have one
+            # - name: Install dependencies
+            #   run: |
+            #       python -m pip install --upgrade pip
+            #       pip install flask # install Flask directly
             - name: Start Server
               run: |
                     python backend.py &
