@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         node-verzija:
-          - 16.x
+          - 12.x
           - 18.x
     steps: # Posamezni koraki testiranja.
       - uses: actions/checkout@v2 # Pridobimo izvorno kodo repozitorija.
