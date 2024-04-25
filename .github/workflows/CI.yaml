@@ -3,7 +3,7 @@ name: Neprekinjena integracija
 on: # Kdaj se začne izvajanje delovnega toka?
   push:
     branches:
-      - testno-okolje # Ob vsaki uveljavitvi na veji testno-okolje.
+      - main # Ob vsaki uveljavitvi na veji main.
     paths-ignore:
       - "README.md" # Ignoriramo spremembe v dokumentaciji.
 
