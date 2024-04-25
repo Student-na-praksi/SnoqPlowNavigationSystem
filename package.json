@@ -1,0 +1,23 @@
+{
+    "name": "SnowPlowNavigationSystem",
+    "version": "1.0.0",
+    "description": "CI/CD pipeline for SnowPlow Navigation System",
+    "main": "streznik.js",
+    "scripts": {
+        "start-server": "python backend.py",
+        "test": "mocha",
+        "start": "npm run start-server"
+    },
+    "author": "ekipa 25",
+    "license": "ISC",
+    "dependencies": {
+        "express": "*"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "mocha": "*",
+        "supertest": "*"
+    },
+    "private": true,
+    "type": "module"
+}
