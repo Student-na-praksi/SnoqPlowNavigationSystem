@@ -2,7 +2,7 @@ import request from 'supertest';
 
 describe('Home Page', () => {
   it('User Authentication', (done) => {
-    request('http://localhost:5000') // replace with your server's URL and port
+    request('http://127.0.0.1:5000') // replace with your server's URL and port
       .get('/')
       .expect(/<h2>User Authentication<\/h2>/i, done);
   });
